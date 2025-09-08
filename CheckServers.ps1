@@ -1,6 +1,7 @@
 #
-# for the script to work it is necessary to run the command in PS beforehand  
+# for the script to work it is necessary to run the commands in PS beforehand  
 # > Install-Module -Name BurntToast -Force
+# > Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 #
 # install
 # https://nmap.org/download.html
@@ -87,3 +88,4 @@ while ($true) {
     }
     Start-Sleep -Seconds 60
 }
+
