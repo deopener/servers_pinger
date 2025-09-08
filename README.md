@@ -18,14 +18,16 @@ Script checks if servers are online every 60 seconds by default. If server is of
 3. install [nmap](https://nmap.org/download.html) и [npcap](https://npcap.com/#download)
 4. run this script in your PowerShell to install BurntToast:
      `Install-Module -Name BurntToast -Force`
-5. reboot you PC/server/VM
-6. configure **CheckServers.ps1**:
+5. run this script in your PowerShell to allow local scripts execution:
+     `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
+6. reboot you PC/server/VM
+7. configure **CheckServers.ps1**:
 - edit line 16 - set telegram bot **token** (You can create new bot  with Telegram bot @BotFather)
 - edit line 17 - set telegram **chat_id** (You can get chat_id if you write any message to your bot and then open in browser `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates` and search for your message from before)
 - edit line 32 (optional) - to change log location
 - edit line 88 (optional) - to change time interval between script repeats
 - save changes!
-7. launch script **CheckServers.ps1** in PowerShell
-8. enjoy =)
+8. launch script **CheckServers.ps1** in PowerShell
+9. enjoy =)
 
 P.S. script supports **hot servers list change** - you can edit servers list and save it when script is working
